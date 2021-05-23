@@ -1,68 +1,28 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="Reethu,Reethu-Profile,Reethu-Resume">
-    <title>Reethu</title>
-    <link rel="shortcut icon" href="/IMG20012.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body style="background:rgb(10, 153, 70); color:white;">
-    <div class="header">
-      <h1 id="header">Hi, I am 
-      <span>Reethu</span>
-    </div>
-    <hr />
-    <img src="reethu.jpg" alt="myimage" width="200px" height="400px" ><br>
-    <table>
-    <hr />
-    <blockquote>
-      Studying 10th at Pon Vidyashram. <br>
-      Living in Chennai <br>
-      My ambition is to become a Doctor <br>
-    </blockquote>
-    <hr />
-    <center>
-    <table>
-      <tr>
-        <th>Hindi Qualification</th>
-        <th>Institution</th>
-        <th>Year of Passing</th>
-        <th>Class</th>
-      </tr>
-      <tr>
-        <td>Visharadh Poorvardh </td>
-        <td>Daksin Bharat Hindi Prachar Sabha</td>
-         <td>2020</td>
-        <td>first</td>
-      </tr>
-      <tr>
-        <td>Visharadh Uttarardh</td>
-        <td>Daksin Bharat Hindi Prachar Sabha</td>
-          <td> 2020</td>
-        <td>second</td>
-      </tr>
-      <tr>
-        <td>Praveen Poorvardh</td>
-        <td>Daksin Bharat Hindi Prachar Sabha</td>
-         <td>2021</td>
-        <td>first</td>
-      </tr>
-    </table>
-    </center>
-    <hr />
-    <div class="github-link">
-      <a href="https://github.com/reethu550/project1">Visit My GitHub Page</a>
-    </div>
-    <hr />
-    <address>
-      <h4>Address</h4>
-      4/15 <br />
-      Rajarajan Nagar, 1st Street <br />
-      Moulivakkam,<br />
-      Chennai-600125.
-    </address>
-    <hr />
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+</head>
+<body style="background-color:#e9897e;
+     color:"black";">
+     
+    <h1>Let's Start<br/>
+    The Guessing Game</h1>
+
+    
+    <input style="background-color:#fcaef5;" type="number" name="number" id="number-input" min="1" max="100">
+
+    <button id="guess" style="background-color:rgb(255, 255, 255);">Start</button>
+
+    <button onclick=location.reload() style="background-color:#f8f8f8">Reset</button>
+    
+    <div id="result"></div>
+
+    <div id="history"></div>
+    
+    <script src="script.js"></script>
+</body>
 </html>
