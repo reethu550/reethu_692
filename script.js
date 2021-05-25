@@ -2,7 +2,6 @@ let guessBox = document.getElementById("number-input");
 let check = document.getElementById("guess");
 let history = document.getElementById("history");
 const randomNumber = Math.floor(Math.random()*100+1);
-console.log(randomNumber)
 let count = 1;
 let finalResult = false;
 history.innerHTML = "";
@@ -23,26 +22,27 @@ function viewHistory() {
 
 function computeWinner() {
     let result = document.getElementById("result");
+    let guess = guessBox.value;
 
     if (count < 5) {
-        let guess = guessBox.value;
         if (randomNumber == guess) {
             result.innerHTML = "<h1>You Won!</h1>";
             finalResult = true;
         } else if (randomNumber < guess) {
-            result.innerHTML = "<h1>You guessed Too⬆️High!</h1>";
+            result.innerHTML = "<h1>You Too High!</h1>";
             finalResult = false;
         } else {
-            result.innerHTML = "<h1>You guessed Too⬇️Low!</h1>";
+            result.innerHTML = "<h1>You Too Low!</h1>";
             finalResult = false;
         }
         count ++;
-    } else if (count == 5) {
+    } else {
         if (randomNumber == guess) {
-            result.innerHTML = "<h1>Wow You Won !</h1>";
+            result.innerHTML = "<h1>Great You Won!</h1>";
             finalResult = true;
-        } else {
-            result.innerHTML = "<h1>Oops You Lose !</h1>";
+        }
+        else {
+            result.innerHTML = "<h1> Oops You Lose!</h1>";
             finalResult = true;
         }
     }
